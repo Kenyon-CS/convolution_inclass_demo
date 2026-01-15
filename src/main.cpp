@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
     }
 
     const int taps = 8193;           // long filter for algorithmic contrast
-    const double cutoffHz = 9000.0;  // low-pass to reduce hiss
+    const double cutoffHz = 3000.0;  // low-pass to reduce hiss
     const size_t blockSize = 16384;  // overlap-add block size
 
     auto w = readWavPcm16ToMono(argv[1]);
